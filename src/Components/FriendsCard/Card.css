@@ -1,0 +1,160 @@
+.user-status-bar {
+    max-width: 100%;
+    margin: 20px;
+    background-color: var(--background-color); /* Theme-based background */
+    color: var(--text-color); /* Theme-based text color */
+    border-radius: 20px; /* Smaller rounded edges */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+  }
+  
+  .user-icon {
+    background-color: var(--icon-bg); /* Theme-based icon background */
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 12px;
+  }
+  
+  .icon {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    color: var(--icon-color); /* Theme-based icon color */
+  }
+  
+  .user-info {
+    flex-grow: 1;
+  }
+  
+  .username {
+    font-weight: 600;
+  }
+  
+  .additional-info {
+    font-size: 12px;
+    color: var(--additional-info-color); /* Theme-based additional info */
+  }
+  
+  .level {
+    color: var(--level-color); /* Theme-based level color */
+  }
+  
+  .extra-info {
+    color: var(--extra-info-color); /* Theme-based extra info */
+  }
+  
+  .status {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+  }
+  
+  .status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .online {
+    background-color: #48bb78;
+  }
+  
+  .offline {
+    background-color: var(--offline-color);
+  }
+  
+  .status-text {
+    font-size: 12px;
+    margin-left: 4px;
+  }
+  
+  .more-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    color: var(--icon-color);
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .more-icon:hover {
+    color: var(--icon-hover-color); /* Theme-based hover color */
+  }
+  
+  .app-container {
+    padding: 16px;
+    background-color: var(--app-bg-color); /* Theme-based app background */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  .user-status-bar {
+    position: relative; /* This is needed for the popup to be positioned relative to the parent */
+  }
+  
+  .popup-menu {
+    position: absolute;
+    top: 35px; /* Adjust depending on how you want the popup to appear */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border-radius: 4px;
+    width: 150px;
+  }
+  
+  .popup-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .popup-menu li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+  /* Light theme variables */
+  :root {
+    --background-color: #ffffff; /* Light background */
+    --text-color: #1a202c; /* Dark text */
+    --icon-bg: #f7fafc; /* Light icon background */
+    --icon-color: #4a5568; /* Darker icon color */
+    --level-color: #3182ce; /* Blue level color */
+    --additional-info-color: #718096; /* Gray additional info */
+    --extra-info-color: #a0aec0; /* Lighter gray */
+    --offline-color: #a0aec0; /* Gray offline */
+    --icon-hover-color: #2d3748; /* Darker icon hover */
+    --app-bg-color: #edf2f7; /* Light background for app container */
+  }
+  
+  /* Dark theme variables */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #1a202c; /* Dark background */
+      --text-color: #e2e8f0; /* Light text */
+      --icon-bg: #2d3748; /* Darker icon background */
+      --icon-color: #a0aec0; /* Lighter icon color */
+      --level-color: #63b3ed; /* Lighter blue level */
+      --additional-info-color: #cbd5e0; /* Lighter gray additional info */
+      --extra-info-color: #e2e8f0; /* Light gray */
+      --offline-color: #4a5568; /* Dark gray offline */
+      --icon-hover-color: #ffffff; /* White icon hover */
+      --app-bg-color: #2d3748; /* Dark background for app container */
+    }
+  } 
+  
