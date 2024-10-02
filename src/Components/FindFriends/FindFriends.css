@@ -1,0 +1,123 @@
+:root{
+    --primary-btn-color : rgb(19, 102, 234);
+    --accept-btn-color: rgb(0, 138, 0);
+    --reject-btn-color: rgb(233, 0, 0);
+}
+
+
+h1{
+    text-align: center;
+}
+
+.search-container{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.search{
+    display: flex;
+    gap: 20px;
+}
+
+.search input{
+    flex-grow: 1;
+    padding: 4px 8px;
+    font-size: 1rem;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+}
+.search input:focus{
+    box-shadow: 2px 2px 4px 0px #00000099;
+}
+
+
+
+
+.profiles{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profiles .profile{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    gap: 20px;
+    box-shadow: 0 0 10px 0px black;
+    transition: scale 0.1s;
+}
+
+.profiles .profile:hover{
+    scale: 1.03;
+}
+
+.profiles .profile img{
+    border-radius: 50%;
+}
+
+.profiles .profile .middle{
+    flex-grow: 1;
+}
+
+.profiles .profile .middle .lower{
+    display: flex;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+
+.profile .right{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+button{
+    padding: 5px 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--primary-btn-color);
+    border: 1px solid var(--primary-btn-color);
+    border-radius: 5px;
+    border: 1px solid var(--primary-btn-color);
+}
+
+button:hover{
+    color: var(--primary-btn-color);
+    background-color: white;
+}
+
+button.accept-btn{
+    background-color: var(--accept-btn-color);
+    border-color: var(--accept-btn-color);
+}
+button.accept-btn:hover{
+    color: var(--accept-btn-color);
+    background-color: white;
+}
+
+button.reject-btn{
+    background-color: var(--reject-btn-color);
+    border-color: var(--reject-btn-color);
+}
+button.reject-btn:hover{
+    color: var(--reject-btn-color);
+    background-color: white;
+}
+
+
+
+
+
+img.loader-img{
+    display: block;
+    margin: auto;
+}
+
