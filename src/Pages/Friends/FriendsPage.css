@@ -1,0 +1,9 @@
+.buttons-section{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+.display-friend-section{
+    display: flex;
+    flex-direction: column;
+}
