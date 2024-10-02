@@ -1,7 +1,7 @@
 import React from 'react';
-import { UserStatusBar } from '../../Components/FriendsCard/Card'
+import { UserStatusBar } from '../../components/FriendsPage/FriendsCard/Card'
 import './FriendsPage.css';
-import { PrimaryButton } from '../../Components/Button/PrimaryButton';
+import { PrimaryButton } from '../../components/FriendsPage/Button/PrimaryButton';
 
 const dummyUsers = [
   {
