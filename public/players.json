@@ -1,0 +1,49 @@
+{
+  "players": [
+    {
+      "username": "vijaykr338",
+      "email": "example@gmail.com",
+      "ID": "1842-2321-1223",
+      "profilePicture": "somelink",
+      "noOfWins": 20,
+      "noOfLosses": 10,
+      "trophies": 4634
+    },
+    {
+      "username": "johnDoe123",
+      "email": "john.doe@example.com",
+      "ID": "1842-2321-1224",
+      "profilePicture": "anotherlink",
+      "noOfWins": 15,
+      "noOfLosses": 5,
+      "trophies": 3200
+    },
+    {
+      "username": "janeSmith456",
+      "email": "jane.smith@example.com",
+      "ID": "1842-2321-1225",
+      "profilePicture": "yetanotherlink",
+      "noOfWins": 25,
+      "noOfLosses": 8,
+      "trophies": 5000
+    },
+    {
+      "username": "playerOne789",
+      "email": "player.one@example.com",
+      "ID": "1842-2321-1226",
+      "profilePicture": "linkhere",
+      "noOfWins": 30,
+      "noOfLosses": 12,
+      "trophies": 5500
+    },
+    {
+      "username": "gamerGirl101",
+      "email": "gamer.girl@example.com",
+      "ID": "1842-2321-1227",
+      "profilePicture": "somelinkhere",
+      "noOfWins": 18,
+      "noOfLosses": 7,
+      "trophies": 4100
+    }
+  ]
+}
