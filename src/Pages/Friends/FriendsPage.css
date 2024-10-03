@@ -1,12 +1,21 @@
+.friend-componet-wrapper{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+}
+
 .buttons-section{
     display: flex;
-    margin: 20px;
+    margin: 0 50px;
     justify-content: space-between;
 }
 .display-friend-section{
     display: flex;
     flex-direction: column;
 }
+
 
 .bg{
     position: fixed;
@@ -22,12 +31,19 @@
     position: relative;
     width: 700px;
     min-height: 400px;
+    background-color: var(--bg-color);
+    margin: 150px auto;
+    color: white;
+}
+
+.close-btn{
     background-color: white;
     margin: 150px auto;
 }
 
 button.close-btn{
     position: absolute;
+    margin: 0;
     top: -50px;
     right: 0;
 }
