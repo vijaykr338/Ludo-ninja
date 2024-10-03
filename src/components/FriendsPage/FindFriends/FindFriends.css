@@ -113,7 +113,6 @@ button.reject-btn{
 button.reject-btn:hover{
     color: var(--reject-btn-color);
     background-color: var(--bg-card-color);
-
 }
 
 

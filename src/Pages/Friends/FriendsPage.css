@@ -16,9 +16,6 @@
     flex-direction: column;
 }
 
-body{
-    background-color: var(--bg-color);
-}
 
 .bg{
     position: fixed;
@@ -40,6 +37,11 @@ body{
 }
 
 .close-btn{
+    background-color: white;
+    margin: 150px auto;
+}
+
+button.close-btn{
     position: absolute;
     top: -50px;
     right: 0;

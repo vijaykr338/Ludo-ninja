@@ -16,10 +16,12 @@ const FriendsPage = () => {
 
   return (
     <>
+
       <div className='friend-componet-wrapper'>
         <div className="title">
           <h1>FRIENDS</h1>
         </div>
+
         <div className='buttons-section'>
             <PrimaryButton title='Search People' fn={() => setShowSearch(true)} />
             <PrimaryButton title='Friend Requests' fn={() => setShowRequests(true)} />
@@ -44,7 +46,6 @@ const FriendsPage = () => {
       <div className="bg">
         <div className='serach-friend'>
           <PrimaryButton className='close-btn' title='Close' fn={()=>{setShowSearch(false)}} />
-          {/* <button className='close-btn' onClick={()=>{setShowSearch(false)}}>Close</button> */}
           <Search/>
         </div>
       </div>
