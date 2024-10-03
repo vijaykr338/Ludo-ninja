@@ -5,6 +5,7 @@ import './Card.css';
 const MoreIcon = ({ onClick }) => (
   <svg 
     xmlns="http://www.w3.org/2000/svg" 
+    fill='white'
     viewBox="0 0 24 24" 
     width="24" 
     height="24"
@@ -53,7 +54,7 @@ export const UserStatusBar = ({ username, level, country, additionalInfo, isOnli
               height="24"
               className="icon"
             >
-              <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v2h20v-2c0-3.33-6.67-5-10-5z"></path>
+              <path  d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v2h20v-2c0-3.33-6.67-5-10-5z"></path>
             </svg>
           </div>
         )}

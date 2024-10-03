@@ -1,7 +1,8 @@
 .user-status-bar {
     max-width: 100%;
     margin: 20px;
-    background-color: var(--background-color); /* Theme-based background */
+    background-color: var(--bg-card-color); /* Theme-based background */
+    border: 1px solid var(--border-color);
     color: var(--text-color); /* Theme-based text color */
     border-radius: 20px; /* Smaller rounded edges */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
@@ -10,11 +11,10 @@
     padding: 15px;
     margin-left: 50px;
     margin-right: 50px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
   }
   
   .user-icon {
-    background-color: var(--icon-bg); /* Theme-based icon background */
+    background-color: var(--icon-bg); 
     border-radius: 50%;
     padding: 8px;
     margin-right: 12px;
@@ -24,7 +24,6 @@
     width: 33px;
     height: 33px;
     border-radius: 50%;
-    color: var(--icon-color); /* Theme-based icon color */
   }
   
   .user-info {
@@ -33,6 +32,7 @@
   
   .username {
     font-weight: 600;
+    margin-bottom: 5px;
   }
   
   .additional-info {
@@ -74,27 +74,28 @@
   }
   
   .more-icon {
-    width: 20px;
-    height: 20px;
+    padding: 8px;
+    border-radius: 50%;
     margin-left: 12px;
-    color: var(--icon-color);
     cursor: pointer;
     transition: color 0.2s ease;
   }
   
   .more-icon:hover {
-    color: var(--icon-hover-color); /* Theme-based hover color */
+    background-color: var(--bg-color); 
   }
   
+/*   unable to find this in html /componenet
   .app-container {
     padding: 16px;
-    background-color: var(--app-bg-color); /* Theme-based app background */
+    background-color: var(--app-bg-color); /* Theme-based app background 
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease;
-  }
+  } 
+*/
   .user-status-bar {
     position: relative; /* This is needed for the popup to be positioned relative to the parent */
   }
@@ -130,31 +131,16 @@
   
   /* Light theme variables */
   :root {
-    --background-color: #ffffff; /* Light background */
-    --text-color: #1a202c; /* Dark text */
+    /* --background-color: #ffffff; Light background */
+    --text-color: #ffffff; /* Dark text */
     --icon-bg: #f7fafc; /* Light icon background */
-    --icon-color: #4a5568; /* Darker icon color */
+    /* --icon-color: #4a5568; Darker icon color */
     --level-color: #3182ce; /* Blue level color */
-    --additional-info-color: #718096; /* Gray additional info */
-    --extra-info-color: #a0aec0; /* Lighter gray */
+    --additional-info-color: #7d8694; /* Gray additional info */
+    --extra-info-color: #acb3bc; /* Lighter gray */
     --offline-color: #a0aec0; /* Gray offline */
-    --icon-hover-color: #2d3748; /* Darker icon hover */
-    --app-bg-color: #edf2f7; /* Light background for app container */
+    /* --icon-hover-color: #2d3748; Darker icon hover */
+    /* --app-bg-color: #edf2f7; Light background for app container */
   }
   
-  /* Dark theme variables */
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background-color: #1a202c; /* Dark background */
-      --text-color: #e2e8f0; /* Light text */
-      --icon-bg: #2d3748; /* Darker icon background */
-      --icon-color: #a0aec0; /* Lighter icon color */
-      --level-color: #63b3ed; /* Lighter blue level */
-      --additional-info-color: #cbd5e0; /* Lighter gray additional info */
-      --extra-info-color: #e2e8f0; /* Light gray */
-      --offline-color: #4a5568; /* Dark gray offline */
-      --icon-hover-color: #ffffff; /* White icon hover */
-      --app-bg-color: #2d3748; /* Dark background for app container */
-    }
-  } 
   

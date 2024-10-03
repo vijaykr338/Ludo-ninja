@@ -1,9 +1,46 @@
+.friend-componet-wrapper{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+}
+
 .buttons-section{
     display: flex;
-    margin: 20px;
+    margin: 0 50px;
     justify-content: space-between;
 }
 .display-friend-section{
     display: flex;
     flex-direction: column;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.500);
+    backdrop-filter: blur(5px);
+}
+
+.serach-friend{
+    position: relative;
+    width: 700px;
+    min-height: 400px;
+    background-color: var(--bg-color);
+    margin: 150px auto;
+    color: white;
+}
+
+.close-btn{
+    position: absolute;
+    top: -50px;
+    right: 0;
 }
