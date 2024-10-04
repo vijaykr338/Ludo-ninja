@@ -1,0 +1,24 @@
+[
+    {
+      "username": "JohnDoe",
+      "level": 50,
+      "location": "USA",
+      "bio": "Loves coding",
+      "profileImage": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "username": "JaneSmith",
+      "level": 45,
+      "location": "UK",
+      "bio": "Passionate about AI",
+      "profileImage": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "username": "CoderX",
+      "level": 60,
+      "location": "Canada",
+      "bio": "Enjoys solving complex problems",
+      "profileImage": "https://randomuser.me/api/portraits/men/3.jpg"
+    }
+  ]
+  
