@@ -1,0 +1,81 @@
+.profile-page {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 200px;
+  border-radius: 10px;
+  max-width: 120vh;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+  height : 100vh;
+  margin-bottom: -100px;
+}
+
+.header h1 {
+  text-align: center;
+  position:relative;
+  top: 0px;
+  font-size: 35px;
+  color: #ffcc00;
+  margin-top: -100px;
+}
+
+.photo-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 0%;
+  margin-bottom: 30px;
+  border: 2px solid #ffcc00;
+}
+
+.upload-button {
+  margin-bottom: 25px;
+  border-radius: 0%;
+}
+
+.profile-details, .trophies-section, .stats-section, .uuid-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 0px;
+}
+
+.detail-item, .stat-item {
+  display: flex;
+  align-items: center;
+  font-weight : normal;
+}
+
+.detail-item label, .stat-item label {
+  font-size: 30px;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.edit-button {
+  background-color: #ffcc00;
+  color: #1e1e1e;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 80px;
+  margin-left: 15px;
+}
+
+.uuid-section button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}

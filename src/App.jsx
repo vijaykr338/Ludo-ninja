@@ -1,16 +1,12 @@
-import { useState, useEffect } from 'react'
-import FriendsPage from './Pages/Friends/FriendsPage'
-import './App.css'
+import React from "react";
+import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 
 function App() {
- 
-  
-
   return (
-    <div>
-      <FriendsPage />            
+    <div className="App">
+      <ProfilePage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
