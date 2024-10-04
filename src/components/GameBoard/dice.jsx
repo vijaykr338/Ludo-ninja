@@ -11,32 +11,31 @@ function Dice({ onRollDone }) {
     "assets/imgs/dice/dice-6.png",
   ];
   const [diceImage, setDiceImage] = useState("assets/imgs/dice/dice-1.png"); // Default dice face
-  const [rolling, setRolling] = useState(false); // Track dice rolling
+  const [rolling, setRolling] = useState(false); // Track if dice is rolling
 
-  // Dice rolling gif
+  // Dice rolling GIF
   const diceRollGif = "assets/imgs/dice/dice-roll.gif";
 
   const rollDice = () => {
     setRolling(true);
-    setDiceImage(diceRollGif); // Show rolling gif
+    setDiceImage(diceRollGif); // Show the rolling GIF
 
-    // After gif duration, stop rolling and show a random face
+    // After GIF duration, stop rolling and show a random face
     setTimeout(() => {
       const randomFace = Math.floor(Math.random() * 6);
       setDiceImage(diceFaces[randomFace]); // Set final dice face
       setRolling(false);
 
       if (onRollDone) {
-        onRollDone(randomFace + 1); //Passing data back to ludo board and adding 1 as 0 based randomFace
+        onRollDone(randomFace + 1); //Passing data back to ludo board
       }
-    }, 2000); // gif duration
+    }, 2000); // GIF duration
   };
 
   return (
     <div className="dice">
-      <img src={diceImage} alt="Dice" className="dice__img" />
       <button onClick={rollDice} disabled={rolling} className="dice__btn">
-        Roll Dice
+        <img src={diceImage} alt="Dice" className="dice__img" />
       </button>
     </div>
   );
