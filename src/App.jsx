@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import FriendsPage from './Pages/Friends/FriendsPage'
+import Signup from './Pages/AuthenticationPage/Signup'
+import Login from './Pages/AuthenticationPage/Login'
 import './App.css'
 
 function App() {
@@ -8,7 +10,9 @@ function App() {
 
   return (
     <div>
-      <FriendsPage />            
+      {/* <FriendsPage /> */}
+      {/* <Signup /> */}
+      <Login/>
     </div>
   )
 }
