@@ -31,9 +31,9 @@ const FriendsPage = () => {
           <UserStatusBar
           key={index}
           username={user.username}
-          level={user.rank}
+          rank={user.rank}
           country={user.country}
-          additionalInfo={user.trophies}
+          trophies={user.trophies}
           isOnline={user.isOnline}
           profilePic={user.profilePic}
           />
