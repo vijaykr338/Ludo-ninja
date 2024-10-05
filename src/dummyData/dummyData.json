@@ -1,0 +1,27 @@
+[
+    {
+      "username": "JohnDoe",
+      "level": 50,
+      "country": "USA",
+      "additionalInfo": "Loves coding",
+      "isOnline": true,
+      "profilePic": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "username": "JaneSmith",
+      "level": 30,
+      "country": "Canada",
+      "additionalInfo": "Nature enthusiast",
+      "isOnline": false,
+      "profilePic": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "username": "NoProfilePicUser",
+      "level": 70,
+      "country": "India",
+      "additionalInfo": "AI researcher",
+      "isOnline": true,
+      "profilePic": null
+    }
+  ]
+  

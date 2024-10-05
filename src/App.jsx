@@ -1,10 +1,17 @@
-import React from "react";
-import ProfilePage from "./Pages/ProfilePage/ProfilePage";
+
+import { useState, useEffect } from 'react'
+import FriendsPage from './Pages/Friends/FriendsPage'
+import Search from './components/FriendsPage/FindFriends/FindFriends.jsx'
+import Requests from './components/FriendsPage/FriendReq/FriendReq.jsx'
+import './App.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <ProfilePage />
+    <div>
+   
+      <FriendsPage />  
+
     </div>
   );
 }

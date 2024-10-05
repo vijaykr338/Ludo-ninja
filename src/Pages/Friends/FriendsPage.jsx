@@ -1,45 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { UserStatusBar } from '../../components/FriendsPage/FriendsCard/Card'
 import './FriendsPage.css';
 import { PrimaryButton } from '../../components/FriendsPage/Button/PrimaryButton';
+import dummyUsers from '../../dummyData/dummyData.json'
+import Search from '../../components/FriendsPage/FindFriends/FindFriends'
+import Requests from '../../components/FriendsPage/FriendReq/FriendReq'
 
-const dummyUsers = [
-  {
-    username: 'JohnDoe',
-    level: 50,
-    country: 'USA',
-    additionalInfo: 'Loves coding',
-    isOnline: true,
-    profilePic: 'https://randomuser.me/api/portraits/men/1.jpg',
-  },
-  {
-    username: 'JaneSmith',
-    level: 30,
-    country: 'Canada',
-    additionalInfo: 'Nature enthusiast',
-    isOnline: false,
-    profilePic: 'https://randomuser.me/api/portraits/women/1.jpg',
-  },
-  {
-    username: 'NoProfilePicUser',
-    level: 70,
-    country: 'India',
-    additionalInfo: 'AI researcher',
-    isOnline: true,
-    profilePic: null, // No profile picture
-  },
-];
+
 
 const FriendsPage = () => {
+  
+  const [showSearch, setShowSearch] = useState(false);
+  const [showRequests, setShowRequests] = useState(false);
+
+
   return (
-    <div>
-      <div className='buttons-section'>
-          <PrimaryButton title='Find Friends' fn={() => alert('Primary Button Clicked')} />
-          <PrimaryButton title='Friend Requests' fn={() => alert('Secondary Button Clicked')} />
-      </div>
-      <div className='display-friend-section'>
-      {dummyUsers.map((user, index) => (
-        <UserStatusBar
+    <>
+
+      <div className='friend-componet-wrapper'>
+        <div className="title">
+          <h1>FRIENDS</h1>
+        </div>
+
+        <div className='buttons-section'>
+            <PrimaryButton title='Search People' fn={() => setShowSearch(true)} />
+            <PrimaryButton title='Friend Requests' fn={() => setShowRequests(true)} />
+        </div>
+        <div className='display-friend-section'>
+        {dummyUsers.map((user, index) => (
+          <UserStatusBar
           key={index}
           username={user.username}
           level={user.level}
@@ -47,10 +36,32 @@ const FriendsPage = () => {
           additionalInfo={user.additionalInfo}
           isOnline={user.isOnline}
           profilePic={user.profilePic}
-        />
-      ))}
+          />
+        ))}
+        </div>
       </div>
-    </div>
+
+
+      {showSearch && 
+      <div className="bg">
+        <div className='serach-friend'>
+          <PrimaryButton className='close-btn' title='Close' fn={()=>{setShowSearch(false)}} />
+          <Search/>
+        </div>
+      </div>
+      }
+
+
+    {showRequests && 
+      <div className="bg">
+        <div className='serach-friend'>
+          <PrimaryButton className='close-btn' title='Close' fn={()=>{setShowRequests(false)}} />
+          <Requests/>
+        </div>
+      </div>
+    }
+
+  </>
   );
 };
 
