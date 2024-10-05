@@ -1,0 +1,14 @@
+.dice {
+  background-color: black;
+  text-align: center;
+}
+
+.dice__img {
+  height: 50px;
+  width: 50px;
+}
+
+.dice__btn {
+  background-color: black;
+  border: none;
+}
