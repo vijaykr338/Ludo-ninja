@@ -12,7 +12,7 @@ const FriendsPage = () => {
   
   const [showSearch, setShowSearch] = useState(false);
   const [showRequests, setShowRequests] = useState(false);
-
+  const sortedUsers = dummyUsers.sort((a, b) => a.trophies - b.trophies);
 
   return (
     <>
@@ -27,13 +27,13 @@ const FriendsPage = () => {
             <PrimaryButton title='Friend Requests' fn={() => setShowRequests(true)} />
         </div>
         <div className='display-friend-section'>
-        {dummyUsers.map((user, index) => (
+        {sortedUsers.map((user, index) => (
           <UserStatusBar
           key={index}
           username={user.username}
-          level={user.level}
+          level={user.rank}
           country={user.country}
-          additionalInfo={user.additionalInfo}
+          additionalInfo={user.trophies}
           isOnline={user.isOnline}
           profilePic={user.profilePic}
           />

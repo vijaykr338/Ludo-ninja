@@ -62,7 +62,7 @@ export const UserStatusBar = ({ username, level, country, additionalInfo, isOnli
       <div className="user-info">
         <div className="username">{username}</div>
         <div className="additional-info">
-          <span className="level">lvl {level}</span> | {country} |
+          <span className="level">Rank : {level}</span> | {country} |
           <span className="extra-info"> {additionalInfo}</span>
         </div>
       </div>
