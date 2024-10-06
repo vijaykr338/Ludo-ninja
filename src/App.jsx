@@ -12,9 +12,9 @@ function App() {
   return (
     <div>
 
-   
-      <FriendsPage />  
-
+     
+      {/* <FriendsPage />   */}
+      <Signup></Signup>
     </div>
   );
 }

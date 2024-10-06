@@ -25,7 +25,7 @@ function Signup() {
             <h2>Create an account</h2>
             <p>Sign up via Social Channels</p>
             { /* change the route later */}
-            <p>Already have an account? <a href="#">Sign in</a></p>
+      
             <button className="google-signup"><FcGoogle/> Sign Up with Google</button>
             <div className="divider">Or</div>
             <form onSubmit={handleSubmit}>
@@ -34,6 +34,7 @@ function Signup() {
                 <input type="password" placeholder="Password" name='password' required />
                 <button type="submit" className="register-btn">Register</button>
             </form>
+            <p>Already have an account? <a href="#">Sign in</a></p>
         </div>
     </div>
   )
