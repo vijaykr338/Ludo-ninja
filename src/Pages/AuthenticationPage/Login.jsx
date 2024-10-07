@@ -22,7 +22,7 @@ function Login() {
         <div className="form-container">
             <h2>Welcome Back!</h2>
             { /* change the route later */}
-            <p>New User? <a href="#">Create an account</a></p>
+            
             <button className="google-signup"><FcGoogle/> Login with Google</button>
             <div className="divider">Or</div>
             <form onSubmit={handleSubmit}>
@@ -30,6 +30,7 @@ function Login() {
                 <input type="password" placeholder="Password" name='password' required />
                 <button type="submit" className="register-btn">Login</button>
             </form>
+            <p>New User? <a href="#">Create an account</a></p>
         </div>
     </div>
   )
