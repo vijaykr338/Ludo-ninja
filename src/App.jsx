@@ -14,7 +14,8 @@ function App() {
 
      
       {/* <FriendsPage />   */}
-      <Signup></Signup>
+      {/* <Signup></Signup> */}
+      <Login></Login>
     </div>
   );
 }
