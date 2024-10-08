@@ -18,7 +18,7 @@ const MoreIcon = ({ onClick }) => (
   </svg>
 );
 
-export const UserStatusBar = ({ username, level, country, additionalInfo, isOnline, profilePic }) => {
+export const UserStatusBar = ({ username, rank, country, trophies, isOnline, profilePic }) => {
   const [isPopupVisible, setPopupVisible] = useState(false);
   const popupRef = useRef(null); // Reference to the popup
 
@@ -62,8 +62,8 @@ export const UserStatusBar = ({ username, level, country, additionalInfo, isOnli
       <div className="user-info">
         <div className="username">{username}</div>
         <div className="additional-info">
-          <span className="level">lvl {level}</span> | {country} |
-          <span className="extra-info"> {additionalInfo}</span>
+          <span className="level">Rank : {rank}</span> | {country} |
+          <span className="extra-info"> {trophies}</span>
         </div>
       </div>
       <div className="status">
