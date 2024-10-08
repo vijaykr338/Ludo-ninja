@@ -1,0 +1,61 @@
+.bgimage {
+    background-image: url('../src/components/Homepage/ludo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1536px;
+    height: 729px;
+    position: fixed;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+}
+
+.top-left {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    background-image: url('https://randomuser.me/api/portraits/men/1.jpg');
+    background-size: contain;
+}
+
+.top-right {
+    background-image: url('../src/components/Homepage/trophy.webp');
+    background-size: contain;
+    margin-right: 50px;
+    width: 90px;
+    height: 90px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 315px;
+}
+
+.friends-button,
+.play-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.friends-button:hover,
+.play-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
