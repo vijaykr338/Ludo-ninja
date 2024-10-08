@@ -1,10 +1,10 @@
 .bgimage {
-    background-image: url('../src/components/Homepage/ludo.jpeg');
+    background-image: url('../../components/HomePage/ludo_banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 1536px;
-    height: 729px;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
 }
 
@@ -29,18 +29,46 @@
 }
 
 .top-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-image: url('../src/components/Homepage/trophy.webp');
     background-size: contain;
-    margin-right: 50px;
+    margin-right: 220px;
     width: 90px;
-    height: 90px;
+    height: 40px;
+}
+
+.top-right button {
+    width: 120px;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-right button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btns1{
+    margin-right: 30px;
+
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 315px;
+    align-items: flex-start;
+    margin-top: 280px;
+    margin-left: 300px;
 }
 
 .friends-button,
@@ -48,14 +76,19 @@
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 15px;
+    font-size: 1.5rem;
+    padding: 12px 24px;
     margin: 10px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 8px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .friends-button:hover,
 .play-button:hover {
     background-color: #0056b3;
-    color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }

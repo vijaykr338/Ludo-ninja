@@ -1,0 +1,137 @@
+.player-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+    color: white;
+}
+
+.profile-picture{
+    height: 100px;
+}
+
+.trophies{
+    color: yellow;
+}
+
+/* 
+
+
+.player-piece.yellow{
+    background-color: yellow;
+    border: 3px black solid;
+}
+
+.player-piece.green{
+    background-color: rgb(59, 247, 59);
+    border: 3px black solid;
+}
+
+.player-piece.blue{
+    background-color: rgb(11, 235, 255);
+    border: 3px black solid;
+}
+
+.player-piece.red{
+    background-color: red;
+    border: 3px black solid;
+} */
+/* 
+.player-yellow .player-piece:nth-child(1) {
+    position: absolute;
+    top: 9%;
+    left: 8.5%;
+}
+
+.player-yellow .player-piece:nth-child(2) {
+    position: absolute;
+    top: 9%;
+    left: 23.5%;
+}
+
+.player-yellow .player-piece:nth-child(3) {
+    position: absolute;
+    top: 22.5%;
+    left: 8.5%;
+}
+
+.player-yellow .player-piece:nth-child(4) {
+    position: absolute;
+    top: 22.5%;
+    left: 23.5%;
+}
+
+.player-green .player-piece:nth-child(1) {
+    position: absolute;
+    top: 9%;
+    right: 23%;
+}
+.player-green .player-piece:nth-child(2) {
+    position: absolute;
+    top: 9%;
+    right: 8.5%;
+}
+
+.player-green .player-piece:nth-child(3) {
+    position: absolute;
+    top: 22.5%;
+    right: 23%;
+}
+
+.player-green .player-piece:nth-child(4) {
+    position: absolute;
+    top: 22.5%;
+    right: 8.5%;
+}
+
+
+.player-blue .player-piece:nth-child(3) {
+    position: absolute;
+    bottom: 9.5%;
+    left: 8.5%;
+}
+
+.player-blue .player-piece:nth-child(1) {
+    position: absolute;
+    bottom: 22.5%;
+    left: 8.5%;
+}
+.player-blue .player-piece:nth-child(4) {
+    position: absolute;
+    bottom: 5%;  /* 9 */
+    /* left: 41%;  23.5 */
+
+
+/* 
+.player-blue .player-piece:nth-child(2) {
+    position: absolute;
+    bottom: 22.5%;
+    left: 23.25%;
+}
+
+.player-red .player-piece:nth-child(4) {
+    position: absolute;
+    bottom: 9%;
+    right: 8.5%;
+}
+
+.player-red .player-piece:nth-child(3) {
+    position: absolute;
+    bottom: 9%;
+    right:23%;
+}
+
+.player-red .player-piece:nth-child(2) {
+    position: absolute;
+    bottom: 22.5%;
+    right: 8.5%;
+}
+
+.player-red .player-piece:nth-child(1) {
+    position: absolute;
+    bottom: 22.5%;
+    right: 23%;
+} */

@@ -13,18 +13,26 @@ const HomePage = () => {
           <Link to="/profile">
             <div className="top-left"></div>
           </Link>
-          <img src='.\public\logo.png' width='300px' />
+          <img src='/logo.png' width='300px' />
         </div>
 
-        <Link to="/trophies">
-          <div className="top-right"></div>
-        </Link>
+       
+          <div className="top-right">
+            <Link to="/signUp">
+        <button className='btns1'>Sign Up</button>
+            </Link>
+            <Link to="/login">
+        <button className='btns2'>Sign In</button>
+            </Link>
+
+          </div>
+        
 
       </header>
 
       <main className="main-content">
         <Link to="/play">
-          <button className="play-button">PLAY ONLINE !!</button>
+          <button className="play-button">PLAY ONLINE</button>
         </Link>
 
         <Link to="/friend">

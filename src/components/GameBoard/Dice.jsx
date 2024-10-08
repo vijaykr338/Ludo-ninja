@@ -3,18 +3,18 @@ import "./dice.css";
 
 function Dice({ onRollDone }) {
   const diceFaces = [
-    "assets/imgs/dice/dice-1.png",
-    "assets/imgs/dice/dice-2.png",
-    "assets/imgs/dice/dice-3.png",
-    "assets/imgs/dice/dice-4.png",
-    "assets/imgs/dice/dice-5.png",
-    "assets/imgs/dice/dice-6.png",
+    "assets/dice/dice-1.png",
+    "assets/dice/dice-2.png",
+    "assets/dice/dice-3.png",
+    "assets/dice/dice-4.png",
+    "assets/dice/dice-5.png",
+    "assets/dice/dice-6.png",
   ];
-  const [diceImage, setDiceImage] = useState("assets/imgs/dice/dice-1.png"); // Default dice face
+  const [diceImage, setDiceImage] = useState("assets/dice/dice-1.png"); // Default dice face
   const [rolling, setRolling] = useState(false); // Track if dice is rolling
 
   // Dice rolling GIF
-  const diceRollGif = "assets/imgs/dice/dice-roll.gif";
+  const diceRollGif = "assets/dice/dice-roll.gif";
 
   const rollDice = () => {
     setRolling(true);
@@ -29,7 +29,7 @@ function Dice({ onRollDone }) {
       if (onRollDone) {
         onRollDone(randomFace + 1); //Passing data back to ludo board
       }
-    }, 2000); // GIF duration
+    }, 1000); // GIF duration
   };
 
   return (

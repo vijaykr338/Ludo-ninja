@@ -3,12 +3,12 @@ import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import FriendsPage from './Pages/Friends/FriendsPage'
 import ProfilePage from './Pages/ProfilePage/ProfilePage.jsx'
-// import Signup from './Pages/AuthenticationPage/Signup'
-// import Login from './Pages/AuthenticationPage/Login'
-import HomePage from './Pages/HomePage/HomePage.jsx'
-import Search from './components/FriendsPage/FindFriends/FindFriends.jsx'
-import Requests from './components/FriendsPage/FriendReq/FriendReq.jsx'
+import HomePage from './Pages/HomePage/Homepage.jsx'
+
 import './App.css'
+import GameBoard from './Pages/GameBoardPage/GameBoard.jsx';
+import Signup from './Pages/AuthenticationPage/SignUp.jsx'
+import Login from './Pages/AuthenticationPage/Login.jsx'
 
 
 function App() {
@@ -18,12 +18,14 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />          {/* Home Page Route */}
           <Route path="/friend" element={<FriendsPage />} />  {/* Friend Page Route */}
-          <Route path="/profile" element={<ProfilePage />} />          {/* Home Page Route */}
+          <Route path="/profile" element={<ProfilePage />} />   
+          <Route path='/play' element={<GameBoard/>} />   
+          <Route path='/signUp'element={<Signup/>}/>    
+          <Route path='/login'element={<Login/>}/>    
         </Routes>
       </Router>
 
-      {/* <Signup></Signup>
-      <Login></Login> */}
+      
     </div>
   );
 }
